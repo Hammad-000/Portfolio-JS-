@@ -1,4 +1,4 @@
-
+/* 
         * {
             margin: 0;
             padding: 0;
@@ -8,7 +8,7 @@
         
         :root {
             --primary: #3B82F6;
-            --secondary: #10B981;
+            --secondary: #10B981; 
             --accent: #8B5CF6;
             --dark: #111827;
             --light: #F9FAFB;
@@ -100,4 +100,4 @@
             from { width: 0 }
             to { width: 100% }
         }
-    
+     */ 
