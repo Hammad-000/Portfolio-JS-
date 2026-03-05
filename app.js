@@ -71,4 +71,27 @@
             alert('Thank you for your message! I will get back to you soon.');
             this.reset();
         });
+
+        const themeToggle = document.getElementById("theme-toggle");
+const themeIcon = document.getElementById("theme-icon");
+const html = document.documentElement;
+
+// Load saved theme
+if (localStorage.theme === "dark") {
+  html.classList.add("dark");
+  themeIcon.classList.replace("fa-moon", "fa-sun");
+}
+
+themeToggle.addEventListener("click", () => {
+  html.classList.toggle("dark");
+
+  if (html.classList.contains("dark")) {
+    localStorage.theme = "dark";
+    themeIcon.classList.replace("fa-moon", "fa-sun");
+  } else {
+    localStorage.theme = "light";
+    themeIcon.classList.replace("fa-sun", "fa-moon");
+  }
+});
+
     
